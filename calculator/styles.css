@@ -1,0 +1,133 @@
+.calculator {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 8px solid rgb(112, 95, 95);
+  border-radius: 10px;
+  background-color: #252222;
+  -webkit-box-shadow: 10px 10px 24px 1px rgba(89, 49, 89, 1);
+  -moz-box-shadow: 10px 10px 24px 1px rgba(89, 49, 89, 1);
+  box-shadow: 10px 10px 24px 1px rgba(89, 49, 89, 1);
+
+}
+
+.name {
+  color: #fff;
+  padding: 15px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+.heading:hover {
+  color: rgb(133, 5, 54);
+  transform: scale(0.9);
+}
+
+.display {
+  background-color: #a09a9a;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: right;
+}
+
+#placeholder {
+  animation: blink 1s infinite;
+  display: flex;
+  font-size: 20px;
+  justify-content: flex-end;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+button:visited {
+  transition: transform .2s;
+}
+
+button:active {
+  transform: scale(1.5);
+}
+
+.header {
+  float: left;
+  color: white;
+}
+
+.mirror-box {
+  display: inline-block;
+  margin-left: 129px;
+  color: rgba(255, 255, 255, 0.315);
+}
+
+.number {
+  background-color: #9beff1;
+}
+
+button.number:hover {
+  background-color: #46b7b9;
+}
+
+.operator {
+  background-color: #96f1c7;
+}
+
+button.operator:hover {
+  background-color: #49cf91;
+}
+
+#equal {
+  background-color: #f8a3a3;
+  border: 3px solid #813232;
+  color: #000;
+}
+
+#equal:hover {
+  background-color: #cc6868;
+  color: #000;
+}
+
+.clear {
+  background-color: red;
+  color: #fff;
+}
+
+.head {
+  display: inline-block;
+}
